@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMBHAV KUMAR RAI</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+:root{
+    --main-color:#e38528;
+    --number-font: 'Marck Script', cursive;
+     --blue:#3c6382;
+    --dark-blue:#0a3d62;
+}
+
+*{
+
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fcf2e8;
+    padding-left: 30rem;
+}
+
+section{
+    padding:1rem 5%;
+    min-height: 100vh;
+}
+
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color:#111;
+    text-transform: uppercase;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+    font-family: ;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:var(--main-color);
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:#111;
+    letter-spacing: .2rem;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; bottom:0;
+    background:#222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding:8rem 2rem;
+    width:30rem;
+    text-align: center;
+}
+
+header .logo{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header .logo span{
+    text-transform: capitalize;
+    color:var(--main-color);
+    font-family: 'style script', cursive;}
+header a{
+    font-family: var(--number-font);
+
+}
+
+header .navbar a{
+    display: block;
+    font-size: 2rem;
+    color:#fff;
+    margin:2rem 0;
+    font-family: 'poppins', sans-serif;
+}
+
+header .navbar a:hover{
+    letter-spacing: .2rem;
+    color:var(--main-color);
+}
+
+header .follow a{
+    font-size: 2.5rem;
+    color:#fff;
+    margin:0 .7rem;
+}
+
+header .follow a:hover{
+    color:var(--main-color);
+}
+
+#menu-bars{
+    position: fixed;
+    top:1rem; right: 1rem;
+    z-index: 10000;
+    background:var(--main-color);
+    color:#fff;
+    border-radius: .5rem;
+    padding:1rem 1.5rem;
+    font-size: 3rem;
+    cursor:pointer;
+    display: none;
+}
+
+.cursor-1{
+    position: absolute;
+    top:0; left:0;
+    height:1rem; width:1rem;
+    background: var(--main-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.cursor-1.active{
+    height:7rem;
+    width:7rem;
+    opacity: .3;
+}
+
+.cursor-2{
+    position: absolute;
+    top:0; left:0;
+    height:4rem; width:4rem;
+    border:.1rem solid var(--main-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+    transition: .3s linear;
+}
+
+.cursor-2.active{
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.home .image{
+    flex:1 1 40rem;
+}
+
+.home .image img{
+    width:100%;
+}
+
+.home .content{
+    flex:1 1 40rem;
+}
+
+.home .content .hi{
+    font-size: 4rem;
+    color:var(--dark-blue);
+    font-family: 'style script', cursive;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color:#111;
+    text-transform: uppercase;
+    font-family: 'poppins', sans-serif;
+}
+
+.home .content h3 span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.home .content .info{
+    font-size: 2rem;
+    color:#111;
+    padding:.5rem 0;
+    font-family: 'marck script', cursive;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.home .content .text{
+    font-size: 1.7rem;
+    color:#666;
+    padding:.5rem 0;
+    font-family: 'poppins', sans-serif;
+
+}
+.btn{
+        font-family: 'poppins', sans-serif;
+
+}
+.about .row-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-bottom: 2rem;
+}
+.heading{
+        font-family: 'poppins', sans-serif;
+
+}
+.about .row-1 .image{
+    flex:1 1 25rem;
+}
+
+.about .row-1 .image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border:1rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.about .row-1 .content{
+    flex:1 1 50rem;
+}
+
+.about .row-1 .content h3{
+    color:#333;
+    font-size: 3rem;
+    font-family: 'marck script', cursive;
+}
+
+.about .row-1 .content p{
+    color:#666;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.about .row-1 .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding: 0.5rem 0;
+}
+
+.about .row-1 .content .box-container .box{
+    flex:1 1 20rem;
+}
+
+.about .row-1 .content .box-container .box span{
+    color:var(--main-color);
+}
+
+.about .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.about .row-2 .skills{
+    flex:1 1 40rem;
+}
+
+.about .row-2 .skills .progress{
+    padding:1rem 0;
+}
+
+.about .row-2 .skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding:.7rem 0;
+    font-size:2rem;
+    color:#111;
+    font-weight: 800;
+    font-family: 'marck script', cursive;
+}
+
+.about .row-2 .skills .progress .bar{
+    width:100%;
+    background:#ccc;
+    overflow:hidden;
+    height:1rem;
+    border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress .bar span{
+    display:block;
+    height:100%;
+    background:var(--main-color);
+    border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress:nth-child(1) .bar span{
+    width:95%;
+}
+
+.about .row-2 .skills .progress:nth-child(2) .bar span{
+    width:80%;
+}
+
+.about .row-2 .skills .progress:nth-child(3) .bar span{
+    width:95%;
+}
+
+.about .row-2 .skills .progress:nth-child(4) .bar span{
+    width:90%;
+}
+
+.about .row-2 .box-container{
+    flex:1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.about .row-2 .box-container .box{
+    flex:1 1 15rem;
+    background:#fff;
+    padding:2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.about .row-2 .box-container .box h3{
+    color:var(--main-color);
+    font-size: 3rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.about .row-2 .box-container .box p{
+    color:#666;
+    font-size: 2rem;
+    padding-top: .5rem;
+    font-family: 'marck script', cursive;
+    font-weight: 800;
+}
+
+.service .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.service .box-container .box{
+    flex:1 1 30rem;
+    text-align: center;
+    padding:2rem;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.service .box-container .box i{
+    height:6rem;
+    width:6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color:#fff;
+    background:var(--main-color);
+    border-radius: 50%;
+}
+
+.service .box-container .box h3{
+    color:#444;
+    font-size: 2.2rem;
+    padding-top: 1rem;
+    font-family: 'marck script', cursive;
+}
+
+.service .box-container .box p{
+    color:#666;
+    font-size: 1.3rem;
+    padding-top: .5rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.experience .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience .box-container .box{
+    position: relative;
+    flex:1 1 33rem;
+    border-left: .2rem solid var(--main-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;    
+}
+
+.experience .box-container .box::before{
+    content: '';
+    position: absolute;
+    top:0; left:-1rem;
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    background:var(--main-color);
+}
+
+.experience .box-container .box .content{
+    background:#fff;
+    padding:1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+
+}
+
+.experience .box-container .box .content span{
+    color:#fff;
+    font-size: 2rem;
+    background:var(--main-color);
+    border-radius: 50rem;
+    padding:.4rem 1rem;
+    font-family: 'marck script', cursive;
+}
+
+.experience .box-container .box .content h3{
+    font-size: 2.5rem;
+    padding:.5rem 0;
+    color:#111;
+    font-family: 'style script', cursive ;
+}
+
+.experience .box-container .box .content p{
+    font-size: 1.5rem;
+    color:#666;
+    font-family: 'poppins', sans-serif;
+}
+
+.portfolio .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.portfolio .box-container .box{
+    flex:1 1 30rem;
+    height:25rem;
+    position: relative;
+    overflow:hidden;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background:#fff;
+    border-radius: .5rem;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio .box-container .box:hover img{
+    height:75%;
+    width:75%;
+}
+
+.portfolio .box-container .box h3{
+    position: absolute;
+    bottom:.5rem; left:1rem;
+    font-size: 2.5rem;
+    color:#333;
+    text-transform: uppercase;
+    font-family: 'poppins', sans-serif;
+}
+
+.portfolio .box-container .box .icons{
+    position: absolute;
+    top:1rem; right:1rem;
+}
+
+.portfolio .box-container .box .icons a{
+    display: block;
+    height:4rem;
+    width:4rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:#333;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.portfolio .box-container .box .icons a:hover{
+    background:var(--main-color);
+    color:#fff;
+}
+
+.contact .icons-container{
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.contact .icons-container .icons{
+    flex:1 1 25rem;
+    text-align: center;
+    padding:2rem;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.contact .icons-container .icons i{
+    height:5rem;
+    width:5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--main-color);
+    color:#fff;
+    border-radius: 50%;
+}
+
+.contact .icons-container .icons h3{
+    color:#111;
+    font-size: 2rem;
+    padding:.5rem 0;
+    padding-top: 1rem;
+}
+
+.contact .icons-container .icons p{
+    color:#666;
+    font-size: 1.7rem;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.contact .row form{
+    flex:1 1 55rem;
+    background:#fff;
+    padding:0 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.contact .row .map{
+    flex:1 1 25rem;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    width: 200%;
+}
+
+.contact .row form .box,
+.contact .row form textarea{
+    width: 100%;
+    border-bottom: .1rem solid #333;
+    color:#333;
+    text-transform: none;
+    font-size: 1.7rem;
+    padding:1rem 0;
+    margin:1rem 0;
+}
+
+.contact .row form .box:focus,
+.contact .row form textarea:focus{
+    border-color: var(--main-color);
+}
+
+.contact .row form .box::placeholder,
+.contact .row form textarea::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.contact .row form .btn{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.footer{
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding:2.5rem;
+    text-align: center;
+    color:#666;
+    background: #fff;
+    font-family: 'poppins', sans-serif;
+}
+
+.footer span{
+    color:var(--main-color);
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    body{
+        padding: 0;
+    }
+
+    #menu-bars{
+        display: initial;
+    }
+
+    header{
+        left:-120%;
+    }
+
+    header.active{
+        left:0%;
+    }
+
+    .cursor-1,
+    .cursor-2{
+        display: none;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        width:100%;
+    }
+
+    .experience .box-container .box{
+        padding-right: 0;
+    }
+
+}
+</style>
+<body>
+
+<!-- custom cursors  -->
+<div class="cursor-1"></div>
+<div class="cursor-2"></div>
+
+
+<div id="menu-bars" class="fas fa-bars"></div>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"> <span>SAMBHAV</span> RAI </a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+  
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span class="hi"> hi there... </span>
+        <h3> i am <span> Sambhav rai </span> </h3>
+        <p class="info"> i am a front-end and Back-end developer </p>
+        <p class="text"> Hi i am sambhav i am front-end nd back-end developer , 2d game developer, responsive design And ecommerce website developer.</p>
+        <a href="#about" class="btn">about me</a>
+    </div>
+
+    <div class="image">
+        <img src="C:\Users\user\Downloads\personal porfolio\images\Screenshot_20220525_141556.jpg" alt="" style="border-radius: 10rem; width: 80%;">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> about <span> me </span> </h1>
+
+<div class="row-1">
+
+    <div class="image">
+        <img src="C:\Users\user\Downloads\personal porfolio\images\Screenshot_20220525_141556.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3> my name is sambhav rai & i am a font-end and back-end developer </h3>
+        <p>i am front-end and back-end developer i m experinenced in maaking any type of website , i am learned html, css , js ,php , mysql , database managment and etc .</p>
+        <div class="box-container">
+            <div class="box">
+                <p> <span> age : </span> 14 </p>
+                <p> <span> gender : </span> male </p>
+                <p> <span> language : </span> hindi, english </p>
+                <p> <span> work : </span> front-end developer and back-end developer</p>
+            </div>
+            <div class="box">
+                <p> <span> freelance : </span> available </p>
+                <p> <span> phone : </span> +91 97706 19826 </p>
+                <p> <span> email : </span> sambhavrai101@gmail.com </p>
+                <p> <span> country : </span> india </p>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+<h1 class="heading"> <span> my </span> skills </h1>
+
+<div class="row-2">
+
+    <div class="skills">
+        <div class="progress">
+            <h3> web design <span> 95% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+        <div class="progress">
+            <h3> web development <span> 80% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+        <div class="progress">
+            <h3> UI design <span> 95% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+        <div class="progress">
+            <h3> Responsive design <span> 90% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>  2+ </h3>
+            <p>years of experience</p>
+        </div>
+        <div class="box">
+            <h3>  20+ </h3>
+            <p>happy clients</p>
+        </div>
+        <div class="box">
+            <h3> 80+ </h3>
+            <p>projects completed</p>
+        </div>
+        <div class="box">
+            <h3>  1+ </h3>
+            <p>awards won</p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- service section starts  -->
+
+<section class="service" id="service">
+
+<h1 class="heading"> <span> my </span> services </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3>web design</h3>
+            <p>I am make best design for website i make 25+ best designs.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <h3>PhotoShop</h3>
+            <p>I am immerdiate in the uses of photoshop, i am edit best photo.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-mobile"></i>
+            <h3>responsive design</h3>
+            <p>i am make every website responsive , and 20+ responsive design i also maked.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Projects</h3>
+            <p>i am lunch 20+ website in github for free without any money.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-chart-line"></i>
+            <h3>Data Handling</h3>
+            <p>i am handle website data very securly in php my admin database 100% secure.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Marketing</h3>
+            <p>I am experienced in email marketing , i am handle email marketing due to 1 year.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- service section ends -->
+
+<!-- experience section starts  -->
+
+<section class="experience" id="experience">
+
+    <h1 class="heading"> <span> my </span> experience </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+                <span> 1+ Years </span>
+                <h3>front-end development</h3>
+                <p>I am developed 10+ website in front-end, i am very experineced in front-end development.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 5+ Months </span>
+                <h3>back-end development</h3>
+                <p>I am developed 5+ website in Back-end, i am very experineced in back-end development.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 8+ Months</span>
+                <h3>Hyper text markup language ( html )</h3>
+                <p>i make 70+ website using html i am very experineced in html language.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 7+ months </span>
+                <h3>cascading style sheet ( css )</h3>
+                <p>i make 70+ website using html i am very experineced in css language , i am maked very cute design of web page.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 8+ months </span>
+                <h3>Javascript ( js )</h3>
+                <p> make 65+ website using js i am very experineced in js language , i am maked very cute design of web page aand very validted in js .</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 1+ years </span>
+                <h3>Hypertext Preprocessor ( php )</h3>
+                <p>i make 65+ website using php i am very experineced in php language , i am managed database very easily .</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- experience section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading"> <span> my </span> portfolio </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="C:\Users\user\Downloads\personal porfolio\images\img_6092b01a0c16e.jpg" alt="">
+            <h3> project 01 </h3>
+            <div class="icons">
+                <a href="https://honeyrai123.github.io/quiz.github.io/" class="fas fa-link"></a>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="C:\Users\user\Downloads\personal porfolio\images\Screenshot 2022-05-25 140015.png" alt="">
+            <h3> project 02 </h3>
+            <div class="icons">
+                <a href="https://honeyrai123.github.io/menja2.github.io/" class="fas fa-link"></a>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="C:\Users\user\Downloads\personal porfolio\images\Screenshot 2022-05-25 140126.png" alt="">
+            <h3> project 03 </h3>
+            <div class="icons">
+                <a href="https://honeyrai123.github.io/earth.github.io/" class="fas fa-link"></a>
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span> me </span> </h1>
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3 style="font-family: 'poppins', sans-serif;">my email</h3>
+            <p style="font-family: 'poppins', sans-serif;">sambhavrai101@gmail.com</p>
+            <p style="font-family: 'poppins', sans-serif;">raisambhavkumar@gmail.com</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3 style="font-family: 'poppins', sans-serif;">my number</h3>
+            <p style="font-family: 'poppins', sans-serif;">+91 9770619826</p>
+            <p style="font-family: 'poppins', sans-serif;">+91 6262136408</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3 style="font-family: 'poppins', sans-serif;">my address</h3>
+            <p style="font-family: 'poppins', sans-serif;">churcha colliery nepal gate c.g - 497339</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <form action="">
+
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+
+            <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" class="btn" value="send message">
+
+        </form>
+
+        <iframe class="map" src="C:\Users\user\Downloads\personal porfolio\images\Screenshot_20220525_141556.jpg"></iframe>
+
+    </div>
+
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+<footer class="footer"> created by <span> mr. HONEY RAI </span> | all rights reserved! </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+}
+
+let cursor1 = document.querySelector('.cursor-1');
+let cursor2 = document.querySelector('.cursor-2');
+
+window.onmousemove = (e) =>{
+    cursor1.style.top = e.pageY + 'px';
+    cursor1.style.left = e.pageX + 'px';
+    cursor2.style.top = e.pageY + 'px';
+    cursor2.style.left = e.pageX + 'px';
+}
+
+document.querySelectorAll('a').forEach(links =>{
+
+    links.onmouseenter = () =>{
+        cursor1.classList.add('active');
+        cursor2.classList.add('active');
+    }
+
+    links.onmouseleave = () =>{
+        cursor1.classList.remove('active');
+        cursor2.classList.remove('active');
+    }
+
+});
+</script>
+
+</body>
+</html>
